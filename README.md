@@ -9,8 +9,14 @@
 
 
 三、实现方式
+
 两份code：
+
 1.load_movielens.py
+
 主要为加载本地数据。数据来源可参考MovieLens官方网站下载：https://grouplens.org/datasets/movielens/
+
 2.user_based_similarity_function.py
+
 正在学习，实现部分。
+
