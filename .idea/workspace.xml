@@ -50,8 +50,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="9423">
-                <caret line="349" column="9" lean-forward="false" selection-start-line="349" selection-start-column="9" selection-end-line="349" selection-end-column="9" />
+              <first_editor relative-caret-position="540">
+                <caret line="192" column="6" lean-forward="true" selection-start-line="192" selection-start-column="6" selection-end-line="192" selection-end-column="6" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -648,8 +648,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="9423">
-            <caret line="349" column="9" lean-forward="false" selection-start-line="349" selection-start-column="9" selection-end-line="349" selection-end-column="9" />
+          <first_editor relative-caret-position="540">
+            <caret line="192" column="6" lean-forward="true" selection-start-line="192" selection-start-column="6" selection-end-line="192" selection-end-column="6" />
             <folding />
           </first_editor>
           <second_editor>
