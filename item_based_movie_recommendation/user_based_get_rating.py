@@ -100,6 +100,37 @@ def getRating(trainSet, presentUserid, presentItemid, sim):
             return (averageOfUser + s/simSum)
 
 
+def getAllUserRating(fileTrain, fileTest, fileResult, sim):
+    trainSet = loadMovieLensToDict(fileTrain)
+    testSet = loadMovieLensToDict(fileTest)
+    inAllnum = 0
+    file = open(fileResult, 'w')
+    for presentUserid in testSet:
+        for presentItem in testSet[presentUserid]:
+            rating = getRating(trainSet, presentUserid, presentItem, sim)
+            file.write('%s, %s, %.4f\n' % (presentUserid, presentItem, rating))
+            inAllnum = inAllnum + 1
+    file.close()
+    print ("a train set is done", inAllnum)
+
+
+if __name__ == "__main__":
+    print ("The program is running, please wait!")
+    for i in ('sim_cos', 'sim_adcos', 'sim_pearson'):
+        if i == 'sim_cos':
+            sim = sim_cos
+        elif i == 'sim_adcos':
+            sim = sim_adcos
+        else:
+            sim = sim_person
+        print ('user based with %s is running, please wait!' %i)
+        for j in range(1,6):
+            getAllUserRating('u%d.base' %j, 'u%d.test' %j, 'user_based_with_%s/u%dpredict.csv' %(i,j),sim)
+            print ('The %d st train set is done,please wait!' %j)
+        print('user based with %s is finished!' %i)
+        print(time.time() - start_time)
+    print("Report, master, the program is finished!")
+    print(time.time() - start_time)
 
 
 
